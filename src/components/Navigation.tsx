@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import profileLogo from "@/assets/profile-logo.png";
 
 const Navigation = () => {
@@ -50,9 +51,12 @@ const Navigation = () => {
             ))}
           </div>
 
-          <Button variant="outline" size="sm" className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            Download CV
-          </Button>
+          <div className="flex items-center space-x-3">
+            <ThemeToggle />
+            <Button variant="outline" size="sm" className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              Download CV
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
