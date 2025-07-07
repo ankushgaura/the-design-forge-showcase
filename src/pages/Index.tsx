@@ -147,38 +147,66 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-16 bg-background/50 backdrop-blur-sm border-t border-border">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold gradient-text mb-4">
-              Senior Web Designer
+      {/* Creative Footer */}
+      <footer className="relative py-20 bg-gradient-to-r from-background via-background/95 to-background overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+        <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent"></div>
+        <div className="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent"></div>
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-full mb-6 glow">
+              <Code className="w-10 h-10 text-white" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-6">
+              Senior Web Designer & Developer
             </h2>
-            <p className="text-muted-foreground mb-4">
-              Working at <a 
-                href="https://seventhtechnology.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-medium"
-              >
-                Seventh Technology
-              </a>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-muted-foreground">
-              <a 
-                href="mailto:info@designerankush.com"
-                className="text-primary hover:underline font-medium"
-              >
-                info@designerankush.com
-              </a>
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-gradient-secondary/50 backdrop-blur-sm rounded-2xl p-8 border border-border/30 shadow-lg">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+                  <div className="flex items-center gap-3 text-lg">
+                    <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                    <span className="text-muted-foreground">Currently working at</span>
+                  </div>
+                  <a 
+                    href="https://seventhtechnology.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300 hover:scale-105 transform"
+                  >
+                    Seventh Technology
+                  </a>
+                </div>
+                
+                <div className="flex items-center justify-center gap-4 p-4 bg-muted/20 rounded-xl border border-border/20">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm text-muted-foreground">Available for contact</span>
+                  </div>
+                  <a 
+                    href="mailto:info@designerankush.com"
+                    className="text-lg font-medium text-primary hover:text-primary/80 transition-all duration-300 hover:scale-105 transform flex items-center gap-2"
+                  >
+                    <span>info@designerankush.com</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="text-center pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Portfolio. All rights reserved.
-            </p>
+
+          <div className="text-center">
+            <div className="inline-flex items-center gap-4 px-6 py-3 bg-gradient-secondary/30 backdrop-blur-sm rounded-full border border-border/20">
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <span className="text-sm text-muted-foreground">
+                © {new Date().getFullYear()} Portfolio. Crafted with passion & precision.
+              </span>
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            </div>
           </div>
         </div>
+
+        {/* Decorative elements */}
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
       </footer>
     </div>
   );
