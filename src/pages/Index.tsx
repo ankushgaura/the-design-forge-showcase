@@ -147,28 +147,39 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-background/50 backdrop-blur-sm">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 gradient-text">
-              Ready to Start Your Project?
+      {/* Footer */}
+      <footer className="py-16 bg-background/50 backdrop-blur-sm border-t border-border">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold gradient-text mb-4">
+              Senior Web Designer
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Let's work together to create something amazing. From design concepts 
-              to fully functional websites, I'm here to help bring your ideas to life.
+            <p className="text-muted-foreground mb-4">
+              Working at <a 
+                href="https://seventhtechnology.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Seventh Technology
+              </a>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-lg px-8 py-6">
-                <Link to="/contact">Start a Project</Link>
-              </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6">
-                <Link to="/about">Learn More</Link>
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-muted-foreground">
+              <a 
+                href="mailto:info@designerankush.com"
+                className="text-primary hover:underline font-medium"
+              >
+                info@designerankush.com
+              </a>
             </div>
           </div>
+          <div className="text-center pt-8 border-t border-border">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Portfolio. All rights reserved.
+            </p>
+          </div>
         </div>
-      </section>
+      </footer>
     </div>
   );
 };
